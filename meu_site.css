@@ -62,16 +62,12 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.618;
-  /* max-width: 38em; */
-  /* margin: auto; */
-  /* color: #4a4a4a; */
   background-color: #f3f0f5;
-  /* padding: 13px; */
   margin: 0;    
   padding: 0;    
   max-width: inherit;    
   color: #4a4a4a;
-  background-image: url("kisspng-tree.png");  
+  background-image: url("kisspng-tre.png");  
   background-repeat: no-repeat;
   background-position: 50% 80%;
   background-size: 500px;

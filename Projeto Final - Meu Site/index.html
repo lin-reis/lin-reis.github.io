@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WoW Pics</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-fixed">
+            <div class="container">
+                <!-- essa div é base do bootstrap -->
+                <div class="navbar-header">
+                    <!-- LOGO -->
+                    <a href="index.html" alt="WoW-Pics - home" title="Home"><img id="logo" src="img/WoW-Pics-logo.png"
+                            width="80px"></a>
+
+                    <!-- SMARTPHONE -->
+                    <button type="button" style="margin-top:25px" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#menu_lista" aria-expanded="false">
+                    </button>
+                </div>
+                <!-- esse collapse siginifica que ao reduzir o tamanho da página ele muda o modelo de menu e fica aqueles 3 risquinhos. O comando encerra ao final do Button -->
+                <div class="collapse navbar-collapse" id="menu_lista">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="link_menu"><a href="#">Dicas</a></li>
+                        <li class="link_menu"><a href="#" data-toggle="modal" data-target="#help">Fale Conoso</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+
+    </header>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <!-- o carrossel ficou com 5 colunas e o que sobrou ficou com 7 colunas, que no caso é o texto  -->
+                <div class="col-md-7 col-xs-12">
+                    <h1>Wow Pics</h1>
+                    <p>Nosso blog surgiu com o propósito de te ajudar a criar um layout super dinâmico para o seu site.
+                        Apresentamos para vocês os sites mais incríveis. Eles contam com uma gama de arquivos que vão
+                        desde imagens, icones, vetores, wallpapers, mokups, fontes, estilos de texto até recursos
+                        simples e super atraentes para seus clientes!
+
+                    </p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/Pixabay-logo.svg.png" class="img-thumbnail">
+                            <div class="caption">
+                                <h3>PIXABAY</h3>
+                                <p>O Pixabay é um ótimo site. Ele conta com mais de 1 milhão de imagens, fotos e vídeos
+                                    em alta qualidade para seus projetos, totalmente gratuito e em português.</p>
+                                <p><a href="https://pixabay.com/pt/" class="btn btn-primary" role="button">Ver site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/2560px-Unsplash_wordmark_logo.svg.png" width="300px" class="img-thumbnail">
+                            <div class="caption">
+                                <h3>Unsplash</h3>
+                                <p>a plataforma desse site conta com uma bagagem enorme de imagens em alta resolução que
+                                    são desenvolvidos por criadores de todos os lugares. São mais de 15 categorias para
+                                    você explorar.</p>
+                                <p><a href="https://unsplash.com/" class="btn btn-primary" role="button">Ver site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/baixados.jpg" class="img-thumbnail">
+                            <div class="caption">
+                                <h3>Freepik</h3>
+                            </div>
+                            <p>Esse site conta com mais de 1,5 milão de arquivos que variam desde imagens em alta
+                                resolução até vetores e icones, todos no formato PSD para você fazer as alterações
+                                que desejar.</p>
+
+                            <p><a href="https://br.freepik.com/" class="btn btn-primary" role="button">Ver Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL HELP -->
+    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="help">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Fale Conosco</h4>
+                </div>
+                <!-- Formulário para contato -->
+                <div class="modal-body">
+                    <section class="get-in-touch">
+                        <form class="contact-form row">
+                            <div class="form-field col-lg-6">
+                                <input id="name" class="input-text js-input" type="text" required>
+                                <label class="label" for="name">Nome</label>
+                            </div>
+                            <div class="form-field col-lg-6 ">
+                                <input id="email" class="input-text js-input" type="email" required>
+                                <label class="label" for="email">E-mail</label>
+                            </div>
+                            <div class="form-field col-lg-6 ">
+                                <input id="phone" class="input-text js-input" type="text" required>
+                                <label class="label" for="phone">Numero para contato</label>
+                            </div>
+                            <div class="form-field col-lg-12">
+                                <input id="message" class="input-text js-input" type="text" required>
+                                <label class="label" for="message" .">Mensagem</label>
+                            </div>
+                            <div class="form-field col-lg-12">
+                                <input class="submit-btn" type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </section>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookieDesc" widht="40px">
+        <p>Ao usar este site, você aceita automaticamente que usamos cookies. Saiba mais sobre o nosso <a
+                href="https://nicepage.com/Privacy" target="_blank"> Politica de privacidade e uso de dados</a>.</p>
+    </div>
+    <div class="cookieButton"><a onclick="PureCookie.dismiss();">Aceito</a></div>
+
+    <!-- FIM Modal -->
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 WoW Pics | Todos os direitos reservados. Construido por
+            <a class="text-white" href="#"> By Évelin
+                Reis</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!-- ***DICA DE SITE PARA BUSCAR EXEMPLOS DE CÓDIGOS PRONTOS PARA USAR https://www.tutorialrepublic.com/******* -->
